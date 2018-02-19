@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
 @import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Anton|Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
 
 html.js,
 .js body {
@@ -185,9 +186,10 @@ html.js,
 /* page content */
 
 .info {
-	font-size: 1.25em;
-	max-width: 50%;
+	font-size: 1.50em;
+	max-width: 60%;
 	margin-top: 1.5em;
+	font-family: 'Varela Round', sans-serif;
 }
 
 .poster {
@@ -334,7 +336,7 @@ html.js,
 		display: none;
 	}
 	.menu {
-		margin-top: 150%;
+		margin-top: 130%;
 	}
 	#page-home {
 		overflow-y: auto;
@@ -342,6 +344,13 @@ html.js,
 	#space {
 		position: fixed;
 	}
+	.first-menu {
+		margin-left: 0%;
+	}
+}
+
+.first-menu {
+	margin-left: 10%;
 }
 
 .card {
@@ -426,4 +435,116 @@ html.js,
 	background-size: cover; 
 	background-position: center;
 	background-attachment: fixed;
+}
+
+#page-about {
+	background: url('../images/background.jpg'); 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#page-about h1 {
+	font-family: 'Anton', sans-serif;
+	color: #fff;
+	font-size: 5em;
+}
+
+#page-events {
+	overflow-y: auto;
+	background: url('../images2/zombie.gif'); 
+	background-attachment: fixed; 
+	background-size: cover; 
+	background-position: center;
+}
+
+#page-events h1 {
+	font-family: 'Anton', sans-serif;
+	color: #fff;
+	font-size: 5em;
+}
+
+#page-exhibition {
+	/*background: url('../images2/Untitled-2.jpg'); */
+	background-attachment: fixed; 
+	background-size: cover; 
+	-webkit-background-size: cover; 
+	background-position: center;
+}
+
+#page-exhibition h1 {
+	font-family: 'Anton', sans-serif;
+	color: #fff;
+	font-size: 5em;
+}
+
+#page-keynote {
+	background: url('../images2/Untitled-1.jpg');
+	background-attachment: fixed; 
+	background-size: cover; 
+	-webkit-background-size: cover; 
+	background-position: center;
+}
+
+#page-keynote h1 {
+	font-family: 'Anton', sans-serif;
+	color: #fff;
+	font-size: 5em;
+}
+
+#page-workshops {
+	background: url('../images2/robot-gif.gif');
+	background-attachment: fixed; 
+	background-size: cover; 
+	-webkit-background-size: cover; 
+	background-position: center;
+}
+
+#page-workshops h1 {
+	font-family: 'Anton', sans-serif;
+	color: #fff;
+	font-size: 5em;
+}
+
+#page-team {
+	/*background: url('../images2/robot-gif.gif');*/
+	background-attachment: fixed; 
+	background-size: cover; 
+	-webkit-background-size: cover; 
+	background-position: center;
+}
+
+#page-team h1 {
+	font-family: 'Anton', sans-serif;
+	color: #fff;
+	font-size: 5em;
+}
+
+#page-sponsors {
+	/*background: url('../images2/robot-gif.gif');*/
+	background-attachment: fixed; 
+	background-size: cover; 
+	-webkit-background-size: cover; 
+	background-position: center;
+}
+
+#page-sponsors h1 {
+	font-family: 'Anton', sans-serif;
+	color: #fff;
+	font-size: 5em;
+}
+
+#page-contact {
+	/*background: url('../images2/robot-gif.gif');*/
+	background-attachment: fixed; 
+	background-size: cover; 
+	-webkit-background-size: cover; 
+	background-position: center;
+}
+
+#page-contact h1 {
+	font-family: 'Anton', sans-serif;
+	color: #fff;
+	font-size: 5em;
 }
