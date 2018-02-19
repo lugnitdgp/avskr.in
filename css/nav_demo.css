@@ -40,7 +40,7 @@ body {
 	font-family: 'Avenir Next', Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
 	margin: 0;
 	color: #cecece;
-	background: #fff;
+	background: linear-gradient(black, #fff);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -52,7 +52,7 @@ a {
 }
 
 a:hover {
-	color: #000;
+	color: #fff;
 }
 
 

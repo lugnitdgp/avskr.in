@@ -8,6 +8,9 @@ html.js,
 	height: 100vh;
 }
 
+.fa {
+	color: #fff;
+}
 /* Pages nav */
 
 .pages-nav {
@@ -87,7 +90,7 @@ html.js,
 
 .link:hover,
 .link:focus {
-	color: #000;
+	color: #fff;
 }
 
 .link--page {
@@ -327,6 +330,18 @@ html.js,
 	.poster {
 		margin: 1em;
 	}
+	.big-logo {
+		display: none;
+	}
+	.menu {
+		margin-top: 150%;
+	}
+	#page-home {
+		overflow-y: auto;
+	}
+	#space {
+		position: fixed;
+	}
 }
 
 .card {
@@ -357,7 +372,7 @@ html.js,
   width: 100%;
   transform: translateY(-50%);
 }
-.menu-center{list-style-type: none;text-align: center;padding: 70px 0;position: relative;z-index: 9;}
+.menu-center{list-style-type: none;padding: 70px 0;position: relative;z-index: 9;}
 .menu-center li a{text-decoration: none;color: #54d2eb;padding: 5px 9px!important;font-size: 13px;font-weight: inherit;width: 100%;font-family: cg;}
 .menu-center li{
     padding: 42px 0px;
@@ -369,10 +384,10 @@ html.js,
     font-family: 'Bungee Inline', cursive;
     cursor: pointer;
 }
-.menu-ceter p {
+.menu-ceter div {
 	transition: all .2s ease-in-out; 
 }
-.menu-center p:hover {
+.menu-center div:hover {
 	/*background-color: #000;
 	border-radius: 5%;*/
     transform: scale(1.1); 
@@ -397,4 +412,18 @@ html.js,
 #page-home h3 {
 	font-family: 'Josefin Sans', sans-serif;
 	text-align: center;
+}
+
+.img-valign {
+	width: 25%;
+  vertical-align: middle;
+  margin-bottom: .50em;
+}
+
+#page-home {
+	background: url('../images/bg_home-100.jpg'); 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: center;
+	background-attachment: fixed;
 }
