@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Anton|Josefin+Sans');
 
 html.js,
 .js body {
@@ -387,3 +389,12 @@ html.js,
   position: absolute;
 }
 
+#page-home h1 {
+	font-family: 'Anton', sans-serif;
+	text-align: center;
+}
+
+#page-home h3 {
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+}
