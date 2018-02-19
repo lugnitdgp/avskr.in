@@ -209,20 +209,27 @@
 
 	init();
 
-	// $('body').scroll(function(){
-	// 	toggleMenu();
-	// });
-
 	$('#about-us').click(function() {
-		console.log('Hello');
-		openPage('page-docu');
+		openPage('page-about');
 	});
-
-	$('body').click(function() {
-		console.log('Hello');
+	$('#event').click(function() {
+		openPage('page-events');
 	});
-
-
+	$('#exhibition').click(function() {
+		openPage('page-exhibition');
+	});
+	$('#key-note').click(function() {
+		openPage('page-keynote');
+	});
+	$('#workshop').click(function() {
+		openPage('page-workshops');
+	});
+	$('#sponsors').click(function() {
+		openPage('page-sponsors');
+	});
+	$('#team').click(function() {
+		openPage('page-team');
+	});
 
 /* 3d effect 1 */
 	var _3DPretty = function() {
