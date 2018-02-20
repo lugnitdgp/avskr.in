@@ -437,6 +437,10 @@ html.js,
 	background-attachment: fixed;
 }
 
+.text1 {
+	font-size: 3vh;
+}
+
 #page-about {
 	background: url('../images/background.jpg'); 
 	background-repeat: no-repeat; 
@@ -547,4 +551,8 @@ html.js,
 	font-family: 'Anton', sans-serif;
 	color: #fff;
 	font-size: 5em;
+}
+
+.big-logo-wrapper {
+	margin-top: 7vmax;
 }
