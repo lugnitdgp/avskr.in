@@ -56,6 +56,9 @@ html.js,
 .pages-nav__item {
 	width: 33%;
 	padding: 1em;
+	font-size: 1.4em;
+	font-family: 'Bungee Inline', cursive;
+	color: #fff;
 }
 
 .js .pages-nav__item {
