@@ -4,8 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 
-html.js,
-.js body {
+html, body {
 	overflow: hidden;
 	height: 100vh;
 }
@@ -281,79 +280,6 @@ html.js,
 	transform: rotate3d(0, 0, 1, -45deg);
 }
 
-@media screen and (max-width: 60em) {
-	.info {
-		max-width: 100%;
-	}
-	.poster {
-		position: relative;
-		top: auto;
-		left: auto;
-		display: block;
-		max-width: 100%;
-		max-height: 50vh;
-		margin: 0 0 0 50%;
-	}
-	.pages-nav__item {
-		width: 50%;
-		min-height: 20px;
-	}
-	.link--page {
-		overflow: hidden;
-		white-space: nowrap;
-		text-overflow: ellipsis;
-	}
-	.link--social {
-		margin: 0 0.1em;
-	}
-}
-
-@media screen and (max-width: 40em) {
-	.js .pages-nav {
-		display: block;
-		padding: 10px 20px 0 20px;
-		text-align: left;
-	}
-	.js .pages-nav__item {
-		width: 100%;
-		padding: 4px 0;
-	}
-	.js .pages-nav__item--small {
-		display: inline-block;
-		width: auto;
-		margin-right: 5px;
-	}
-	.pages-nav__item--social {
-		font-size: 0.9em;
-	}
-	.menu-button {
-		top: 15px;
-		right: 10px;
-		left: auto;
-	}
-	.info {
-		font-size: 0.85em;
-	}
-	.poster {
-		margin: 1em;
-	}
-	.big-logo {
-		display: none;
-	}
-	.menu {
-		margin-top: 130%;
-	}
-	#page-home {
-		overflow-y: auto;
-	}
-	#space {
-		position: fixed;
-	}
-	.first-menu {
-		margin-left: 0%;
-	}
-}
-
 .first-menu {
 	margin-left: 10%;
 }
@@ -421,11 +347,13 @@ html.js,
 #page-home h1 {
 	font-family: 'Anton', sans-serif;
 	text-align: center;
+	color: #fff;
 }
 
 #page-home h3 {
 	font-family: 'Josefin Sans', sans-serif;
 	text-align: center;
+	color: #fff;
 }
 
 .img-valign {
@@ -440,6 +368,7 @@ html.js,
 	background-size: cover; 
 	background-position: center;
 	background-attachment: fixed;
+	height: 100vh;
 }
 
 .text1 {
@@ -452,6 +381,8 @@ html.js,
 	background-size: cover; 
 	background-position: center;
 	background-attachment: fixed;
+	overflow-y: auto;
+	height: 100vh;
 }
 
 #page-about h1 {
@@ -466,6 +397,7 @@ html.js,
 	background-attachment: fixed; 
 	background-size: cover; 
 	background-position: center;
+	height: 100vh;
 }
 
 #page-events h1 {
@@ -517,12 +449,13 @@ html.js,
 }
 
 #page-team {
-	/*background: url('../images2/robot-gif.gif');*/
+	background: #000;
 	overflow-y: auto;
 	background-attachment: fixed; 
 	background-size: cover; 
 	-webkit-background-size: cover; 
 	background-position: center;
+	height: 100vh;
 }
 
 #page-team h1 {
@@ -537,6 +470,7 @@ html.js,
 	background-size: cover; 
 	-webkit-background-size: cover; 
 	background-position: center;
+	height: 100vh;
 }
 
 #page-sponsors h1 {
@@ -551,6 +485,7 @@ html.js,
 	background-size: cover; 
 	-webkit-background-size: cover; 
 	background-position: center;
+	height: 100vh;
 }
 
 #page-contact h1 {
@@ -564,8 +499,172 @@ html.js,
 }
 
 .page h4 {
-	text-decoration: underline;
-	font-family: 'Abril Fatface', cursive;
+	/*text-decoration: underline;*/
+	font-family: 'Arial', cursive;
 	color: #fff;
+	font-size: 1.8em;
+	/*font-style: italic;*/
+	opacity: 0.7;
+}
+
+.footer {
+    position: fixed;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+   	background: transparent;
+    color: white;
+    text-align: center;
+}
+.footer .fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 40px;
+    max-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius:10px;
+    cursor: pointer;
+}
+
+.footer .fa:hover {
+    opacity: 0.7;
+}
+
+.footer .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.footer .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.footer .fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.footer .fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.footer .fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.footer .fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.big-logo {
+	filter: drop-shadow(16px 16px 10px black);
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 60em) {
+	.info {
+		max-width: 100%;
+	}
+	.poster {
+		position: relative;
+		top: auto;
+		left: auto;
+		display: block;
+		max-width: 100%;
+		max-height: 50vh;
+		margin: 0 0 0 50%;
+	}
+	.pages-nav__item {
+		width: 50%;
+		min-height: 20px;
+	}
+	.link--page {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.link--social {
+		margin: 0 0.1em;
+	}
+	.first-menu {
+		margin-left: 0% !important;
+	}
+	.fest-logo {
+		float: none !important;
+	}
+}
+
+@media screen and (max-width: 40em) {
+	.js .pages-nav {
+		display: block;
+		padding: 10px 20px 0 20px;
+		text-align: left;
+	}
+	.js .pages-nav__item {
+		width: 100%;
+		padding: 4px 0;
+	}
+	.js .pages-nav__item--small {
+		display: inline-block;
+		width: auto;
+		margin-right: 5px;
+	}
+	.pages-nav__item--social {
+		font-size: 0.9em;
+	}
+	.menu-button {
+		top: 15px;
+		right: 10px;
+		left: auto;
+	}
+	.info {
+		font-size: 0.85em;
+	}
+	.poster {
+		margin: 1em;
+	}
+	.big-logo {
+		display: none;
+		width: 0%;
+	}
+	.menu {
+		margin-top: 130%;
+	}
+	#page-home {
+		overflow-y: auto;
+	}
+	#space {
+		position: fixed;
+	}
+	.fa {
+          padding: 2%;
+          font-size: 30px;
+          width: 10%;
+          max-height: 40px;
+          text-align: center;
+          text-decoration: none;
+          margin: 5px 2px;
+          border-radius:10px;
+    }
+    .first-menu {
+		margin-left: 0% !important;
+	}
+	.page h4 {
+		/*text-decoration: underline;*/
+		font-family: 'Arial', cursive;
+		color: #fff;
+		font-size: 1.2em;
+		/*font-style: italic;*/
+		opacity: 0.7;
+	}
 
 }

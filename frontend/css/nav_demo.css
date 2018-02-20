@@ -49,11 +49,12 @@ a {
 	text-decoration: none;
 	color: #cecece;
 	outline: none;
+	margin: 0;
 }
 
-a:hover {
+/*a:hover {
 	color: #fff;
-}
+}*/
 
 
 /* Blueprint header */
