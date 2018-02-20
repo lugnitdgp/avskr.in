@@ -518,6 +518,7 @@ html.js,
 
 #page-team {
 	/*background: url('../images2/robot-gif.gif');*/
+	overflow-y: auto;
 	background-attachment: fixed; 
 	background-size: cover; 
 	-webkit-background-size: cover; 
