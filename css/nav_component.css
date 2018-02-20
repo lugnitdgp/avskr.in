@@ -219,7 +219,6 @@ html.js,
 	outline: none;
 	background: transparent;
 	border-radius: 50%;
-	color: #fff;
 }
 
 .no-js .menu-button {
@@ -229,7 +228,7 @@ html.js,
 .menu-button::before,
 .menu-button::after,
 .menu-button span {
-	background: #5f656f;
+	background: #fff;
 }
 
 .menu-button::before,
