@@ -9,20 +9,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Aavishkar{% endblock %}</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="vendor/css/animate.css">
-    <link rel="stylesheet" href="vendor/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/nav_component.css" />
-    <link rel="stylesheet" type="text/css" href="css/homepage.css" />
-    <script src="js/nav_modernizr-custom.js"></script>
+    <link rel="stylesheet" href="{% static "vendor/css/animate.css"%}"/>
+    <link rel="stylesheet" href="{% static "vendor/css/bootstrap-theme.min.css"%}"/>
+    <link rel="stylesheet" href="{% static "vendor/css/bootstrap.min.css"%}"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="{% static "css/nav_component.css"%}"/>
+    <link rel="stylesheet" type="text/css" href="{% static "css/homepage.css"%}"/>
+    <!-- <script src="js/nav_modernizr-custom.js"></script> -->
         <!-- NAVBAR STYLING -->
-    <link rel="stylesheet" type="text/css" href="css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="{% static "css/navbar.css"%}" />
     <style >
         .hameid-loader-overlay {
             width: 100%;
             height: 100%;
-            background: url('images/1-dancing.gif') center no-repeat #FFF;
+            background: url('{% static "images/1-dancing.gif"%}') center no-repeat #FFF;
             z-index: 99999;
             position: fixed;
         }
@@ -31,14 +31,13 @@
 </head>
 
 <body>
-     {% navbar %}
     <!-- PRELOADER -->
     <div class="hameid-loader-overlay">
     </div>
     
     {% block body_contents %}{% endblock %}
     
-    <script src="vendor/js/jquery-3.3.1.min.js"></script>
+    <script src="{% static "vendor/js/jquery-3.3.1.min.js"%}"></script>
     <script>
         $(document).ready(function(){
             console.log("READY");
@@ -46,13 +45,13 @@
             $('#main').delay(5000).fadeIn();
         });
     </script>
-    <script src="vendor/js/typed.js"></script>
-    <script src="js/typing.js"></script>
+    <script src="{% static "vendor/js/typed.js"%}"></script>
+    <script src="{% static "js/typing.js"%}"></script>
     <noscript>
         <style>.hameid-loader-overlay { display: none; } </style>
     </noscript>
 
-    <script src="vendor/js/bootstrap.min.js"></script>
+    <script src="{% static "vendor/js/bootstrap.min.js"%}"></script>
     {% block extrajs %}{% endblock %}
 </body>
 

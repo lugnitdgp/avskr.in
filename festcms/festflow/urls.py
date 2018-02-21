@@ -3,8 +3,11 @@ from django.contrib.auth.views import logout
 from . import views
 
 urlpatterns = [
-    # Home Page
+    # Index Page
     url(r'^$', views.index, name='index'),
+
+    # Home Page
+    url(r'^home/$', views.home, name='home'),
 
     # About Page
     url(r'^about/$', views.about, name='about'),

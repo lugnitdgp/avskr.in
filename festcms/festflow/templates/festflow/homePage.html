@@ -3,14 +3,88 @@
 
 {% block body_contents %}
 
-<div class="container">
-    <div class="title">
-        <div class="logo">
-            <img src="{% static "images/logo.png" %}" class="img-responsive" alt="Logo Brand">
-        </div>
-        <h1>FEST TITLE</h1>
-        <h4>A one-liner description of the fest</h4>
-    </div>
-</div>
+<div id="main" style="height: 100%;width: 100%;">
+		<!-- NAVBAR -->
+		<nav role="navigation" style="position: absolute;top: -4%; left: -2%;">
+		  <div id="navToggle">
+		    <input type="checkbox" />
+		    <span></span>
+		    <span></span>
+		    <span></span>
+		    <ul id="nav" style="height: 110vh;">
+		      <a href="#">
+		        <li>Home</li>
+		      </a>
+		      <a href="#">
+		        <li>About</li>
+		      </a>
+		      <a href="#">
+		        <li>Info</li>
+		      </a>
+		      <a href="#">
+		        <li>Contact</li>
+		      </a>
+		      <a href="https://erikterwan.com/" target="_blank">
+		        <li>Show me more</li>
+		      </a>
+		    </ul>
+		  </div>
+		</nav>
+		<!-- HEADER -->
+		<div class="header_fixed" style="text-align: center; height:120px; background: url('{% static './images/header.png'%}'); background-position: center top;background-size: cover;">
+			<div style="display: inline-block; height: 100%;">
+				<img src="{% static "./images/Aavishkar Logo Final (WHITE).png"%}" style="max-width: 100%;max-height:80%;height: auto;width: auto;">
+			</div>
+		</div>
+		<!-- TYPED -->
+		<div style="text-align: center; height:30px; background: url('{% static './images/info2.png'%}'); background-position: center top;background-size: contain; background-repeat: no-repeat;font-family: 'Oswald';color:white;" id="info">
+		</div>
+	    <!-- MENU -->
+		<div class="menu">
+			<div class="col-md-10 col-md-offset-1 col-sm-12">
+			  <div class="col-md-4 col-sm-4">
+			    <ul class="menu-center">
+			      <li class="left"><a href="#" >ABOUT US <img src="{% static "./images2/about_us1.png"%}" style="height:40px;width: auto;"></a></li>
+			      <li class="left"><a href="#" >EVENTS <img src="{% static "./images2/events1.png"%}" style="height:40px;width: auto;"></a></li>
+			      <li class="left"><a href="#" >EXHIBITION <img src="{% static "./images2/exhibition1.png"%}" style="height:40px;width: auto;"></a></li>
+			      <li class="left"><a href="#" >KEYNOTE <img src="{% static "./images2/keynote1.png"%}" style="height:40px;width: auto;"></a></li>
+			    </ul>
+			  </div>            
+			  <div class="col-md-4 col-sm-4">
+			  	<div style="display:block; text-align: center;height: 100%">
+				    <img src="{% static "./images/Aavishkar Logo Final.png"%}" class="img-responsive animated infinite pulse">
+				    <!-- <img src="{% static "./images/earth.gif" class="img-responsive" style="display: inline-block; padding-bottom:20%;"> -->
+				</div>
+			  </div>
+			  <div class="col-md-4 col-sm-4">
+			    <ul class="menu-center">
+			     	<li class="right"><a href="#"><img src="{% static "./images2/team1.png"%}" style="height:40px;width: auto;"> TEAM</a></li> 
+			    	<li class="right"><a href="#"><img src="{% static "./images2/sponsor1.png"%}" style="height:40px;width: auto;"> SPONSORS</a></li>
+					<li class="right"><a href="#"><img src="{% static "./images2/workshop1.png"%}" style="height:40px;width: auto;"> WORKSHOPS</a></li>
+					<li class="right"><a href="#"><img src="{% static "./images2/register1.png"%}" style="height:40px;width: auto;"> REGISTER</a></li>
+				</ul>
+			  </div>
+			</div>
+		</div>
+		<div class="menu_mob">
+			<div class="col-sm-12 menu-center">
+				<img src="{% static "./images/spaceship2.png"%}" class="img-responsive animated infinite pulse" style="height: 10em;">
+			    <ul class="menu-center">
+			      <li><a href="#">ABOUT US</a></li>
+			      <li><a href="#">EVENTS</a></li>
+			      <li><a href="#">CONTACT US</a></li>
+			      <li><a href="#">TEAM</a></li> 
+			      <li><a href="#">SPONSORS</a></li>
+				  <li><a href="#">WORKSHOPS</a></li>
+				</ul>
+			  </div>
+		</div>
+	</div>
+	<div class="footer">
+    	<span class="fa fa-twitter social"></span>
+    	<span class="fa fa-facebook"></span>
+    	<span class="fa fa-instagram"></span>
+   		<span class="fa fa-youtube"></span>
+ 	</div>
 
 {% endblock %}

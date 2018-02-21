@@ -5,7 +5,7 @@
     display: none; 
 }
 body {
-  background: url('./images/bg_home-100.jpg'); background-position: center top;background-size: cover;
+  background: url('/static/images/bg_home-100.jpg'); background-position: center top;background-size: cover;
 }
 /*NAVBAR*/
 #navToggle
@@ -155,7 +155,6 @@ body {
 .menu-center li a{text-decoration: none;color: #fff;padding: 5px 9px!important;font-size: 13px;font-size:1.5em;width: 100%;font-family: 'Oswald', sans-serif;}
 .menu-center li{
     padding: 40px 0px;
-    background: url(../images/.jpg) no-repeat bottom;
     background-size: contain;
     padding-bottom: 10px;
     display: block;
