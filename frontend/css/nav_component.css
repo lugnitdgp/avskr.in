@@ -304,35 +304,7 @@ html, body {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
 }
-.menu{
-  /* padding: 50px 0px; */
-  /* display: table; */
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  transform: translateY(-50%);
-}
-.menu-center{list-style-type: none;padding: 70px 0;position: relative;z-index: 9;}
-.menu-center li a{text-decoration: none;color: #54d2eb;padding: 5px 9px!important;font-size: 13px;font-weight: inherit;width: 100%;font-family: cg;}
-.menu-center li{
-    padding: 42px 0px;
-    background: url(../images/small-border.png) no-repeat bottom;
-    background-size: contain;
-    padding-bottom: 10px;
-    font-size: 2em;
-    color: #fff;
-    font-family: 'Bungee Inline', cursive;
-    cursor: pointer;
-}
-.menu-ceter div {
-	transition: all .2s ease-in-out; 
-}
-.menu-center div:hover {
-	/*background-color: #000;
-	border-radius: 5%;*/
-    transform: scale(1.1); 
-    text-decoration: underline;
-}
+
 
 #space {
   left: 0;

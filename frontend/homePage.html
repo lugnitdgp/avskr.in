@@ -12,132 +12,128 @@
 	<link rel="stylesheet" href="vendor/css/bootstrap.min.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/nav_component.css" />
+	<link rel="stylesheet" type="text/css" href="css/homepage.css" />
 	<script src="js/nav_modernizr-custom.js"></script>
+		<!-- NAVBAR STYLING -->
+	<link rel="stylesheet" type="text/css" href="css/navbar.css" />
+	<style >
+		.hameid-loader-overlay {
+		    width: 100%;
+		    height: 100%;
+		    background: url('images/1-dancing.gif') center no-repeat #FFF;
+		    z-index: 99999;
+		    position: fixed;
+		}
+	</style>
+
 </head>
 
-<body>
-	<div class="page" id="page-home">
-		<div class="row">
-			<div class="col-md-4 fest-logo">
-				<a href="./index.html"><img src="images/Aavishkar Logo Final (WHITE).png" alt="" style="width: 22%; float: right;"></a>
-			</div>
-			<div class="col-md-4">
-				<h1>Aavishkar-2018</h1>
-				<h3>Quest of the Unknown</h3>
-			</div>
-			<div class="col-md-4">
-				<a href="http://nitdgp.ac.in"><img src="images/nit.png" alt="" style="width: 20%;float: left;"></a>
+<body style="background: url('./images/bg.jpg'); background-position: center top;background-size: cover">
+	<!-- PRELOADER -->
+	<div class="hameid-loader-overlay">
+	</div>
+	
+	<div id="main" style="height: 100%;width: 100%;">
+		<!-- NAVBAR -->
+		<nav role="navigation" style="position: absolute;top: -4%; left: -2%;">
+		  <div id="navToggle">
+		    <input type="checkbox" />
+		    <span></span>
+		    <span></span>
+		    <span></span>
+		    <ul id="nav" style="height: 110vh;">
+		      <a href="#">
+		        <li>Home</li>
+		      </a>
+		      <a href="#">
+		        <li>About</li>
+		      </a>
+		      <a href="#">
+		        <li>Info</li>
+		      </a>
+		      <a href="#">
+		        <li>Contact</li>
+		      </a>
+		      <a href="https://erikterwan.com/" target="_blank">
+		        <li>Show me more</li>
+		      </a>
+		    </ul>
+		  </div>
+		</nav>
+		<!-- HEADER -->
+		<div class="header_fixed" style="text-align: center; height:120px; background: url('./images/header.png'); background-position: center top;background-size: cover;">
+			<div style="display: inline-block; height: 100%;">
+				<img src="./images/Aavishkar Logo Final (WHITE).png" style="max-width: 100%;max-height:80%;height: auto;width: auto;">
 			</div>
 		</div>
+		<!-- TYPED -->
+		<div style="text-align: center; height:30px; background: url('./images/info2.png'); background-position: center top;background-size: contain; background-repeat: no-repeat;font-family: 'Oswald';color:white;" id="info">
+		</div>
+	    <!-- MENU -->
 		<div class="menu">
-			<div class="col-md-8 col-md-offset-2">
-			  <div class="col-md-3">
+			<div class="col-md-10 col-md-offset-1 col-sm-12">
+			  <div class="col-md-4 col-sm-4">
 			    <ul class="menu-center">
-			      <li id="about-us">
-			      		<div class="first-menu">
-							<img class="img-valign" src="images2/events1.png" alt="" />
-							<span class="text1">ABOUT US</span>
-						</div>
-			      
-			      </li>
-			      <li id="event">
-			      	
-				      	<div>
-							<img class="img-valign" src="images2/events1.png" alt="" />
-							<span class="text1">EVENTS</span>
-						</div>
-					
-			      </li>
-			      <li id="exhibition">
-			      	
-				      	<div>
-							<img class="img-valign" src="images2/exhibition1.png" alt="" />
-							<span class="text1">EXHIBITION</span>
-						</div>
-					
-			      </li>
-			      <li id="key-note">
-			      	
-				      	<div class="first-menu">
-							<img class="img-valign" src="images2/keynote1.png" alt="" />
-							<span class="text1">KEYNOTE</span>
-						</div>
-					
-			      </li>
+			      <li class="left"><a href="#" >ABOUT US <img src="./images2/about_us1.png" style="height:40px;width: auto;"></a></li>
+			      <li class="left"><a href="#" >EVENTS <img src="./images2/events1.png" style="height:40px;width: auto;"></a></li>
+			      <li class="left"><a href="#" >EXHIBITION <img src="./images2/exhibition1.png" style="height:40px;width: auto;"></a></li>
+			      <li class="left"><a href="#" >KEYNOTE <img src="./images2/keynote1.png" style="height:40px;width: auto;"></a></li>
 			    </ul>
 			  </div>            
-			  <div class="col-md-6 col-sm-4 big-logo-wrapper">
-			    <img src="images/Aavishkar Logo Final.png" class="img-responsive big-logo">
+			  <div class="col-md-4 col-sm-4">
+			  	<div style="display:block; text-align: center;height: 100%">
+				    <img src="./images/spaceship2.png" class="img-responsive animated infinite pulse">
+				    <!-- <img src="./images/earth.gif" class="img-responsive" style="display: inline-block; padding-bottom:20%;"> -->
+				</div>
 			  </div>
-			  <div class="col-md-3 col-sm-4">
-			    <ul class="menu-center menu-2" style="text-align: right;">
-			     	<li id="workshop">
-			     		
-				      		<div style="margin-right: 10%;">
-								<span class="text1">WORKSHOPS</span>
-								<img class="img-valign" src="images2/workshop1.png" alt="" />
-							</div>
-						
-			      	</li> 
-			    	<li id="sponsors">
-			    		
-				      		<div>
-								<span class="text1">SPONSORS</span>
-								<img class="img-valign" src="images2/sponsor1.png" alt="" />
-							</div>
-						
-			      	</li>
-					<li id="team">
-						
-				      		<div>
-								<span class="text1">TEAM</span>
-								<img class="img-valign" src="images2/team1.png" alt="" />
-							</div>
-						
-			      	</li>
-					<li id="register">
-						
-				      		<div style="margin-right: 10%;" data-toggle="modal" data-target="#myModal">
-								<span class="text1">REGISTER</span>
-								<img class="img-valign" src="images2/register1.png" alt="" />
-							</div>
-						
-						<!-- Modal -->
-						<div id="myModal" class="modal fade" role="dialog" style="z-index: 999999;">
-						  <div class="modal-dialog">
-
-						    <!-- Modal content-->
-						    <div class="modal-content">
-						      <div class="modal-header">
-						        <button type="button" class="close" data-dismiss="modal">&times;</button>
-						        <h4 class="modal-title">Modal Header</h4>
-						      </div>
-						      <div class="modal-body">
-						        <p>Some text in the modal.</p>
-						      </div>
-						      <div class="modal-footer">
-						        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						      </div>
-						    </div>
-
-						  </div>
-						</div>
-			      	</li>
+			  <div class="col-md-4 col-sm-4">
+			    <ul class="menu-center">
+			     	<li class="right"><a href="#"><img src="./images2/team1.png" style="height:40px;width: auto;"> TEAM</a></li> 
+			    	<li class="right"><a href="#"><img src="./images2/sponsor1.png" style="height:40px;width: auto;"> SPONSORS</a></li>
+					<li class="right"><a href="#"><img src="./images2/workshop1.png" style="height:40px;width: auto;"> WORKSHOPS</a></li>
+					<li class="right"><a href="#"><img src="./images2/register1.png" style="height:40px;width: auto;"> REGISTER</a></li>
 				</ul>
 			  </div>
 			</div>
 		</div>
-		<div id="space" class="space"></div>
-		<div class="footer">
-			<span class="fa fa-twitter social"></span>
-			<span class="fa fa-facebook"></span>
-			<span class="fa fa-instagram"></span>
-			<span class="fa fa-youtube"></span>
+		<div class="menu_mob">
+			<div class="col-sm-12">
+				<img src="./images/spaceship2.png" class="img-responsive animated infinite pulse">
+			    <ul class="menu-center">
+			      <li><a href="#">ABOUT US</a></li>
+			      <li><a href="#">EVENTS</a></li>
+			      <li><a href="#">CONTACT US</a></li>
+			      <li><a href="#">TEAM</a></li> 
+			      <li><a href="#">SPONSORS</a></li>
+				  <li><a href="#">WORKSHOPS</a></li>
+				</ul>
+			  </div>
 		</div>
 	</div>
+	<div class="footer">
+    	<span class="fa fa-twitter social"></span>
+    	<span class="fa fa-facebook"></span>
+    	<span class="fa fa-instagram"></span>
+   		<span class="fa fa-youtube"></span>
+ 	</div>
 	<script src="vendor/js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		    console.log("READY");
+		    $('.hameid-loader-overlay').delay(1000).fadeOut();
+		    $('#main').delay(5000).fadeIn();
+		});
+	</script>
+	<script src="vendor/js/typed.js"></script>
+	<script src="js/typing.js"></script>
+	<noscript>
+	    <style>.hameid-loader-overlay { display: none; } </style>
+	</noscript>
+
 	<script src="vendor/js/bootstrap.min.js"></script>
 	<script src="js/nav_main.js"></script>
+		<!-- NAVBAR JS -->
+	<script src="js/navbar.js"></script>
 </body>
 
 </html>
