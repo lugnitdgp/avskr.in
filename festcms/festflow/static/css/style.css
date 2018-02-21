@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css?family=Acme');
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Acme", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    overflow-y: hidden;
+    /*line-height: 1.8;*/
+}
+/*IMAGE*/
+.w3-center img {
+    max-width:50% ;
+    overflow-y: hidden;
+}
+/* Create a Parallax Effect */
+.bgimg-1{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('../images2/planet_earth-wide.jpg');
+    min-height: 100%;
+}
+
+.middle_box{
+    width:100%;
+    color:white;
+    font-size: 5vw;
+    z-index: 50;
+    text-align:center;
+    position:absolute;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /*height: 20px;*/
+    /*background-color: ;*/
+    color: white;
+    text-align: center;
+}
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 40px;
+    max-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius:10px;
+    cursor: pointer;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+#myVideo {
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+@media only screen and (max-device-width: 500px) {
+    .middle_box{
+        width:100%;
+        color:white;
+        font-size: 10vw;
+        z-index: 50;
+        text-align:center;
+        position:absolute;
+    }
+    .fa {
+          padding: 2%;
+          font-size: 30px;
+          width: 10%;
+          max-height: 40px;
+          text-align: center;
+          text-decoration: none;
+          margin: 5px 2px;
+          border-radius:10px;
+    }
+    .w3-center img {
+        max-width:100% ;
+        overflow-y: hidden;
+    }
+}
