@@ -1,0 +1,49 @@
+@import "https://designmodo.github.io/Flat-UI/dist/css/flat-ui.min.css";
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+::-webkit-scrollbar { 
+    display: none; 
+}
+html, body {
+  height: 100vh;
+}
+
+p {
+    color: #000; 
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+h3 {
+  font-size: 1.5em;
+  
+}
+
+small {
+  color: #4f4f4f !important;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .menu{
+      display: none;
+    }
+    .menu_mob{
+      display: block;
+      /*overflow-y: scroll;*/
+    }
+    .menu-center{
+      padding:0;
+    }
+    .menu-center li{
+    padding: 1px 0px;
+    /*background: url(../images/.jpg) no-repeat bottom;*/
+    background-size: contain;
+    padding-bottom: 10px;
+    display: block;
+  }
+    .menu-center li a{text-decoration: none;color: #fff;padding: 5px 9px!important;font-size: 13px;font-size:1em;width: 100%;font-family: 'Oswald', sans-serif;}
+
+}

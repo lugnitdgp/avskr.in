@@ -9,6 +9,9 @@ urlpatterns = [
     # Home Page
     url(r'^home/$', views.home, name='home'),
 
+    # Team Page
+    url(r'^teams/$', views.teams, name='teams'),
+
     # About Page
     url(r'^about/$', views.about, name='about'),
 

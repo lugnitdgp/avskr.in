@@ -32,6 +32,15 @@ def home(request):
 
     return render(request, 'festflow/homePage.html', context)
 
+def teams(request):
+    context = {}
+    profiles_count = Profile.objects.count()
+    all_events = Event.objects.all()
+
+    context['profiles_count'] = profiles_count
+    context['all_events'] = all_events
+
+    return render(request, 'festflow/teams.html', context)
 
 def about(request):
     context = {}
