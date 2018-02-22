@@ -26,6 +26,22 @@ def validate_navbar_entry(url):
 # Create your models here.
 
 
+class EventGroup(models.Model):
+    """Organize events into groups"""
+    group_identifier = models.CharField(max_length=50, unique=True,
+                                        validators=[lowercaseAlphabet])
+    group_name = models.CharField(max_length=100)
+    # event group logo
+    logo = models.ImageField(upload_to='event_group_images/',
+                             blank=True, null=True)
+
+    def __str__(self):
+        return self.group_identifier
+
+    def get_absolute_url(self):
+        return '/events/group/%s/' % self.group_identifier
+
+
 class Event(models.Model):
     "Stores information about the events in the fest"
 
@@ -56,6 +72,10 @@ class Event(models.Model):
 
     # event date and time
     date_time = models.DateTimeField()
+
+    # group
+    group = models.ForeignKey('EventGroup', on_delete=models.SET_NULL,
+                              null=True, blank=True)
 
     def __str__(self):
         return self.name

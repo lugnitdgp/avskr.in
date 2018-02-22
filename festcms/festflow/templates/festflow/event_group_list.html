@@ -1,0 +1,40 @@
+{% extends "festflow/base.html" %}
+{% load static %}
+
+{% block title %} EVENTS {% endblock %}
+
+{% block extra_head %}
+
+<!-- View CSS -->
+<link rel="stylesheet" type="text/css" href='{% static "css/other.css" %}'/>
+
+{% endblock %}
+
+{% block body_contents %}
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 id='link'>Events</h1>
+        <div class="dash"></div>
+        <br />
+        <br />
+        <br />
+        <div class='row'>
+            {% for group in all_groups %}
+            <div class='col-lg-4'>
+                <a href="{{ group.get_absolute_url }}">
+                    {% if group.logo %}
+                    <img src="{{ group.logo.url }}" width='100%' alt= "{{ group.name }}" class='img-responsive' />
+                    {% endif %}
+                    <div class='group-text'>
+                        <div class="subdash"></div>
+                        <p>{{ group.group_name }}</p>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

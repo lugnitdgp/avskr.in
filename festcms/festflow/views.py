@@ -42,6 +42,7 @@ def teams(request):
 
     return render(request, 'festflow/teams.html', context)
 
+
 def about(request):
     context = {}
     context['content'] = About.objects.last()
@@ -59,6 +60,22 @@ def events_g(request):
     all_events = Event.objects.all()
     context['all_events'] = all_events
     return render(request, 'festflow/events_g.html', context)
+
+def event_group_list(request):
+    context = {}
+    all_groups = EventGroup.objects.all()
+    context['all_groups'] = all_groups
+    return render(request, 'festflow/event_group_list.html', context)
+
+
+def event_group(request, group_identifier):
+    context = {}
+    group = EventGroup.objects.get(group_identifier=group_identifier)
+    group_events = Event.objects.filter(group=group)
+    print(list(group_events))
+    context['group_events'] = group_events
+    return render(request, 'festflow/event_group.html', context)
+
 
 def keynotes(request):
     context = {}
@@ -107,7 +124,7 @@ def event_view(request, event_identifier):
     except ObjectDoesNotExist:
         raise Http404
 
-    if request.user.is_authenticated():
+    if request.user.is_authenticated:
         user_profile = Profile.objects.get(user=request.user)
         context['user_profile'] = user_profile
 
@@ -123,7 +140,7 @@ def keynote_view(request, keynote_identifier):
     except ObjectDoesNotExist:
         raise Http404
 
-    if request.user.is_authenticated():
+    if request.user.is_authenticated:
         user_profile = Profile.objects.get(user=request.user)
         context['user_profile'] = user_profile
 

@@ -24,8 +24,12 @@ urlpatterns = [
     # Event Page
     url(r'^events/$', views.events, name='events'),
 
-    # EventGroup Page
-    url(r'^events_g/$', views.events_g, name='events_g'),
+    # Event Groups List Page
+    url(r'^events/groups$', views.event_group_list, name='event_group_list'),
+
+    # Event Group Page
+    url(r'^events/group/(?P<group_identifier>[a-z]*)/$',
+        views.event_group, name='event_group'),
 
     # Keynotes Page
     url(r'^keynotes/$', views.keynotes, name='keynotes'),
