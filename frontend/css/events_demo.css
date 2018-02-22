@@ -51,9 +51,10 @@ html {
 body {
 	font-family: "Avenir", 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
 	color: #CECECE;
-	background: url('../images/events_back.jpg');
+	background: url('../images/events_bg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -94,14 +95,14 @@ a:hover {
 .bp-header h1 > span {
 	font-size: 50%;
 	display: block;
-	color: #4D4D5A;
+	color: #fff;
 } 
 
 .bp-header > span {
 	width: 100%;
 	font-weight: 700;
 	font-size: 0.85em;
-	color: #5C5EDC;
+	color: #fff;
 	position: relative;
 	z-index: 100;
 	display: block;
@@ -221,6 +222,32 @@ a:hover {
 .bp-icon-prev:after {
 	content: '\e004';
 }
+	
+.quick{
+	display: block;
+	right:10%;top:40%;position: absolute;
+	z-index: 250;
+	color:white;
+	font-size: 2em;
+}
+
+/*.quick_li{
+	list-style: none;
+	color: white;
+	font-size: 1em;
+}
+*/
+.quick_li>a {
+	text-decoration: none !important;
+	cursor: pointer;
+	text-align: right;
+	color: white;
+	font-size: 1em;
+	transition: color 1s;
+}
+.quick_li>a:hover {
+	color: #030d1c;
+}
 
 @media screen and (max-width: 40em) {
 	.bp-header {
@@ -239,5 +266,8 @@ a:hover {
 	.bp-header nav {
 		margin: 0;
 		width: 100%;
+	}
+	.quick{
+	display: none;
 	}
 }

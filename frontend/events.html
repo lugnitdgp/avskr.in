@@ -19,11 +19,39 @@
 	<link rel="stylesheet" type="text/css" href="css/events_demo.css" />
 	<!-- Component styles -->
 	<link rel="stylesheet" type="text/css" href="css/events_component.css" />
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
 	<script src="js/events_modernizr.custom.js"></script>
+	<style >
+		.hameid-loader-overlay {
+		    width: 100%;
+		    height: 100%;
+		    background: url('images/1-dancing.gif') center no-repeat #FFF;
+		    z-index: 99999;
+		    position: fixed;
+		}
+	</style>
 </head>
 <body>
-	
+	<!-- PRELOADER -->
+	<div class="hameid-loader-overlay">
+	</div>
+	<!-- HEADER -->
+	<div style="text-align: center; height:8em; background: url('./images/header.png'); background-position: center top;background-size: cover; position: absolute;width: 100%;z-index: 1000;">
+		<div style="display: inline-block; height: 100%;">
+			<img src="./images/Aavishkar Logo Final (WHITE).png" style="max-width: 100%;max-height:80%;height: auto;width: auto;">
+		</div>
+	</div>
+	<!-- QUICK ACCESS -->
+	<div class="quick" >
+		<span>QUICK ACCESS</span>
+		<ul>
+			<li class="quick_li"><a href="">Treasure Hunt</a></li>
+			<li class="quick_li"><a href="">Incanity</a></li>
+			<li class="quick_li"><a href="">CodeCracker</a></li>
+			<li class="quick_li"><a href="">HackNIT</a></li>
+		</ul>			
+	</div>
 	<!-- Main container -->
 	<div class="container">
 		<!-- Grid -->
@@ -32,55 +60,8 @@
 				<a href="#" class="btn btn-primary" style="margin-top: 1%">Go Back</a>
 			</div>
 		</div>
-		<h1>ONLINE EVENTS</h1>
-		<nav class="navbar navbar-inverse">
-		  <div class="container-fluid">
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <a class="navbar-brand" href="#">Online Events</a>
-		    </div>
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-left: 25%;">
-		      <ul class="nav navbar-nav">
-		        <li class="active"><a href="#">Online Treasure Hunt <span class="sr-only">(current)</span></a></li>
-		        <li><a href="#">Digital Fortress</a></li>
-		        <li><a href="#">FreePL</a></li>
-		        <li><a href="#">Inacanity</a></li>
-		        <li><a href="#">FreeMex</a></li>
-		        <li><a href="#">Interfecio</a></li>
-		      </ul>
-		    </div><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
-		</nav>
-		<section class="slider">
-			<!-- <div class="slide slide--current" data-content="content-1">
-				<div class="slide__mover">
-					<div class="zoomer flex-center">
-						<img class="zoomer__image" src="images/iphone.png" alt="iPhone" />
-						<div class="preview">
-							<img src="images/iphone-content-preview.png" alt="iPhone app preview" />
-							<div class="zoomer__area zoomer__area--size-2"></div>
-						</div>
-					</div>
-				</div>
-				<h2 class="slide__title"><span>Event:</span>Digial Fortress</h2>
-			</div>
-			<div class="slide" data-content="content-2">
-				<div class="slide__mover">
-					<div class="zoomer flex-center">
-						<img class="zoomer__image" src="images/ipad.png" alt="iPad Mini" />
-						<div class="preview">
-							<img src="images/ipad-content-preview.png" alt="iPad Mini app preview" />
-							<div class="zoomer__area zoomer__area--size-4"></div>
-						</div>
-					</div>
-				</div>
-				<h2 class="slide__title"><span>Event:</span>FreePL</h2>
-			</div> -->
+		<!-- SLIDER -->
+		<section class="slider" style="margin-top: 3.5em;">
 			<div class="slide slide--current" data-content="content-1">
 				<div class="slide__mover">
 					<div class="zoomer flex-center">
@@ -91,7 +72,7 @@
 						</div>
 					</div>
 				</div>
-				<h2 class="slide__title"><span>Event:</span>Online Treasure Hunt</h2>
+				<h2 class="slide__title"><span>Online Event:</span>Online Treasure Hunt</h2>
 			</div>
 			<div class="slide" data-content="content-2">
 				<div class="slide__mover">
@@ -103,7 +84,7 @@
 						</div>
 					</div>
 				</div>
-				<h2 class="slide__title"><span>Event:</span>Online Treasure Hunt</h2>
+				<h2 class="slide__title"><span>Online Event:</span>Online Treasure Hunt</h2>
 			</div>
 			<div class="slide" data-content="content-3">
 				<div class="slide__mover">
@@ -115,7 +96,7 @@
 						</div>
 					</div>
 				</div>
-				<h2 class="slide__title"><span>Event:</span>Online Treasure Hunt</h2>
+				<h2 class="slide__title"><span>Online Event:</span>Online Treasure Hunt</h2>
 			</div>
 			<div class="slide" data-content="content-4">
 				<div class="slide__mover">
@@ -127,7 +108,7 @@
 						</div>
 					</div>
 				</div>
-				<h2 class="slide__title"><span>Event:</span>Online Treasure Hunt</h2>
+				<h2 class="slide__title"><span>Online Event:</span>Online Treasure Hunt</h2>
 			</div>
 			<div class="slide" data-content="content-5">
 				<div class="slide__mover">
@@ -139,7 +120,7 @@
 						</div>
 					</div>
 				</div>
-				<h2 class="slide__title"><span>Event:</span>Online Treasure Hunt</h2>
+				<h2 class="slide__title"><span>Online Event:</span>Online Treasure Hunt</h2>
 			</div>
 			<!-- <div class="slide" data-content="content-4">
 				<div class="slide__mover">
@@ -222,6 +203,13 @@
 		</section>
 	</div>
 	<script src="vendor/js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		    console.log("READY");
+		    $('.hameid-loader-overlay').delay(1000).fadeOut();
+		    $('#main').delay(5000).fadeIn();
+		});
+	</script>
 	<script src="vendor/js/bootstrap.min.js"></script>
 	<script src="js/events_classie.js"></script>
 	<script src="js/events_dynamics.min.js"></script>
