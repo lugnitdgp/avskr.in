@@ -152,21 +152,31 @@ body {
   transform: translateY(-50%);
 }
 .menu-center{list-style-type: none;text-align: center;position: relative;z-index: 9;}
-.menu-center li a{text-decoration: none;color: #fff;padding: 5px 9px!important;font-size: 13px;font-size:1.5em;width: 100%;font-family: 'Oswald', sans-serif;}
+.menu-center li a{text-decoration: none;color: #fff;padding: 5px 9px!important;font-size:1.6em;width: 100%;font-family: 'Oswald', sans-serif;}
+.menu-center li a:hover {
+  text-decoration: underline;
+}
 .menu-center li{
-    padding: 40px 0px;
+    padding: 2em 0em;
     background-size: contain;
-    padding-bottom: 10px;
+    padding-bottom: 0.5em;
     display: block;
 }
 
 .left{
+  text-align: left;
+}
+
+.left-right {
+  margin-left: 3em;
+}
+
+.right{
   text-align: right;
 }
 
-
-.right{
-  text-align: left;
+.right-left {
+  margin-right: 3em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -182,7 +192,7 @@ body {
     }
     .menu-center li{
     padding: 1px 0px;
-    background: url(../images/.jpg) no-repeat bottom;
+    /*background: url(../images/.jpg) no-repeat bottom;*/
     background-size: contain;
     padding-bottom: 10px;
     display: block;
