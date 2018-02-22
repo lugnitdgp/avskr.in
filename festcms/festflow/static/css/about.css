@@ -9,9 +9,18 @@ html, body {
 }
 
 body {
-  background: url('/static/images/bg_home-100.jpg'); background-position: center top;background-size: cover;
+  background: url('/static/images/background.jpg'); background-position: center top;background-size: cover;
 }
 
+h1 {
+  color: #fff;
+  font-size: 4em;
+}
+
+.info {
+  color: #fff;
+  font-size: 1.1em;
+}
 #space {
   left: 0;
   top: 0;
@@ -146,4 +155,17 @@ body {
   }
     .menu-center li a{text-decoration: none;color: #fff;padding: 5px 9px!important;font-size: 13px;font-size:1em;width: 100%;font-family: 'Oswald', sans-serif;}
 
+  body {
+    overflow-y: auto;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  .info {
+    font-size: 0.8em;
+  }
 }

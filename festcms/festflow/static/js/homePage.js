@@ -96,5 +96,3 @@ window.onload = function() {
   });
 }
 
-$("#about-us").load("aboutus.html");
-
