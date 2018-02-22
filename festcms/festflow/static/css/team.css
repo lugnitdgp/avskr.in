@@ -13,6 +13,7 @@ p {
 
 h1 {
   font-family: 'Oswald', sans-serif;
+  margin-bottom: 10%;
 }
 
 h3 {
@@ -27,23 +28,9 @@ small {
 
 
 @media only screen and (max-width: 600px) {
-    .menu{
-      display: none;
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20%;
     }
-    .menu_mob{
-      display: block;
-      /*overflow-y: scroll;*/
-    }
-    .menu-center{
-      padding:0;
-    }
-    .menu-center li{
-    padding: 1px 0px;
-    /*background: url(../images/.jpg) no-repeat bottom;*/
-    background-size: contain;
-    padding-bottom: 10px;
-    display: block;
-  }
-    .menu-center li a{text-decoration: none;color: #fff;padding: 5px 9px!important;font-size: 13px;font-size:1em;width: 100%;font-family: 'Oswald', sans-serif;}
 
 }
