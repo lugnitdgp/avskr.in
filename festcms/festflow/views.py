@@ -54,6 +54,11 @@ def events(request):
     context['all_events'] = all_events
     return render(request, 'festflow/event.html', context)
 
+def events_g(request):
+    context = {}
+    all_events = Event.objects.all()
+    context['all_events'] = all_events
+    return render(request, 'festflow/events_g.html', context)
 
 def keynotes(request):
     context = {}
