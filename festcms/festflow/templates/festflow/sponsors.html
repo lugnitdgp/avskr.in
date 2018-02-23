@@ -1,34 +1,52 @@
-{% extends "festflow/base.html" %}
 {% load static %}
-{% block title %} SPONSORS {% endblock %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static "css/card.css" %}">
+</head>
+<body>
+<div class="titles">
+<h1>SPONSORS:</h1>
+</div>
 
-{% block extra_head %}
 
-<!-- View CSS -->
-<link rel="stylesheet" type="text/css" href='{% static "css/other.css" %}'/>
 
-{% endblock %}
-
-{% block body_contents %}
-<div class="container">
-    <div class="jumbotron">
-        <h1 id='link'> Sponsors </h1>
-        <div class="dash"></div>
-        <br />
-        <br />
-        <br />
-        <div class='row'>
-            {% for sponsor in all_sponsors %}
-            <div class='col-lg-4'>
-                <img src="{{ sponsor.logo.url }}" width='100%' alt='{{ sponsor.name }}' class='img-responsive' />
-                <div class='event-text'>
-                    <div class="subdash"></div>
-                    {{ sponsor.name }}
-                </div>
-            </div>
-            {% endfor %}
-        </div>
+<div class="card" style="float:left; margin-left:40px; margin-bottom:30px; margin-top:30px">
+    <img src="old-school-tv-transparent.png" alt="Image1" style="width:100% ">
+    <div class="container">
+        <h4><b>1</b></h4>
+        <p>Description</p>
     </div>
 </div>
 
-{% endblock %}
+
+
+<div class="card" style="float:right; margin-right:40px; margin-bottom:30px; margin-top:30px">
+    <img src="old-school-tv-transparent.png" alt="Image1" style="width:100% ">
+    <div class="container">
+        <h4><b>2</b></h4>
+        <p>Description</p>
+    </div>
+</div>
+
+
+<div class="card" style="float:left; margin-left:40px; margin-bottom:30px; margin-top:30px">
+    <img src="old-school-tv-transparent.png" alt="Image1" style="width:100% ">
+    <div class="container">
+        <h4><b>3</b></h4>
+        <p>Description</p>
+    </div>
+</div>
+
+<div class="card" style="float:right; margin-right:40px; margin-bottom:30px; margin-top:30px ">
+    <img src="old-school-tv-transparent.png" alt="Image1" style="width:100% ">
+    <div class="container">
+        <h4><b>4</b></h4>
+        <p>Description</p>
+    </div>
+</div>
+
+</body>
+</html>
