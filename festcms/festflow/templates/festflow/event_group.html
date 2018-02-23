@@ -15,10 +15,11 @@
       {% include "festflow/navBar.html" %}
       <div class="container">
         <div class="carousel">
-          <img src="{% static "images/alien.png" %}" alt="" style="position: absolute; top: -80%; transform: rotateY(0deg);">
           {{group_events.count}}
           {% for event in group_events %}
-            <div class="item" style="transform: rotateY({% widthratio forloop.counter0 1 120 %}deg) translateZ(250px);background: url('{{event.logo.url}}');"></div>
+            <a href="{{ event.get_absolute_url }}">
+              <div class="item" style="transform: rotateY({% widthratio forloop.counter0 1 120 %}deg) translateZ(250px);background: url('{{event.logo.url}}');"></div>
+            </a>
           {% endfor %}
         </div>
       </div>
