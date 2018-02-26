@@ -1,0 +1,11 @@
+@import "https://designmodo.github.io/Flat-UI/dist/css/flat-ui.min.css";
+
+body {
+	background: url('/static/images2/planet_earth-wide.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.wrapper {
+	
+}

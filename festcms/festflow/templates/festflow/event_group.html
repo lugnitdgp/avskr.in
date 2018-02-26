@@ -10,15 +10,14 @@
 {% endblock %}
 
 {% block body_contents %}
-
+{% include "festflow/navBar.html" %}
   <div id="main">
-      {% include "festflow/navBar.html" %}
       <div class="container">
         <div class="carousel">
           {{group_events.count}}
           {% for event in group_events %}
             <a href="{{ event.get_absolute_url }}">
-              <div class="item" style="transform: rotateY({% widthratio forloop.counter0 1 120 %}deg) translateZ(250px);background: url('{{event.logo.url}}');"></div>
+              <div class="item" style="transform: rotateY({% widthratio forloop.counter0 1 120 %}deg) translateZ(250px);background: url('{{event.logo.url}}'); background-size: cover;"></div>
             </a>
           {% endfor %}
         </div>
