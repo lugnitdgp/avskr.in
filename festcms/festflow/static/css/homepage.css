@@ -130,6 +130,9 @@ body {
     .menu{
       display: none;
     }
+    .space {
+      display: none;
+    }
     .menu_mob{
       display: block;
       /*overflow-y: scroll;*/
@@ -145,5 +148,9 @@ body {
     display: block;
   }
     .menu-center li a{text-decoration: none;color: #fff;padding: 5px 9px!important;font-size: 13px;font-size:1em;width: 100%;font-family: 'Oswald', sans-serif;}
+
+  .phone img {
+    margin-top: 10%; 
+  }
 
 }
