@@ -1,49 +1,17 @@
 {% extends "festflow/base.html" %}
 {% load static %}
 
-{% block extra_head %}
-    <link rel="stylesheet" type="text/css" href="{% static "css/event_group.css"%}" />
-{% endblock %}
-
-{% block extrajs %}
-  <script src="{% static "js/event_group.js" %}"></script>
-{% endblock %}
-
-{% block body_contents %}
-{% include "festflow/navBar.html" %}
-  <div id="main">
-      <div class="container">
-        <div class="carousel">
-          {{group_events.count}}
-          {% for event in group_events %}
-            <a href="{{ event.get_absolute_url }}">
-              <div class="item" style="transform: rotateY({% widthratio forloop.counter0 1 120 %}deg) translateZ(250px);background: url('{{event.logo.url}}'); background-size: cover;"></div>
-            </a>
-          {% endfor %}
-        </div>
-      </div>
-      <div class="next">Next</div>
-      <div class="prev">Prev</div>
-  </div>
-{% endblock %}
-
-
-{% comment %}
-
-{% extends "festflow/base.html" %}
-{% load static %}
-
 {% block title %} EVENTS {% endblock %}
 
 {% block extra_head %}
 
 <!-- View CSS -->
-<link rel="stylesheet" type="text/css" href='{% static "css/other.css" %}'/>
+<link rel="stylesheet" type="text/css" href="{% static "css/event.css"%}"/>
 
 {% endblock %}
 
 {% block body_contents %}
-
+{% include "festflow/navBar.html" %}
 <div class="container">
     <div class="jumbotron">
         <h1 id='link'>Events</h1>
@@ -70,4 +38,3 @@
 </div>
 
 {% endblock %}
-{% endcomment %}

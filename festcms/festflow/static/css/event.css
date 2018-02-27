@@ -1,0 +1,12 @@
+@import "https://designmodo.github.io/Flat-UI/dist/css/flat-ui.min.css";
+
+body {
+	background: url('/static/images2/Untitled-1.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.jumbotron {
+	-moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
