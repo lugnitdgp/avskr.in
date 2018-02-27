@@ -1,52 +1,59 @@
+{% extends "festflow/base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{% static "css/card.css" %}">
-</head>
-<body>
-<div class="titles">
-<h1>SPONSORS:</h1>
-</div>
 
+{% block title %} EVENTS {% endblock %}
 
+{% block extra_head %}
 
-<div class="card" style="float:left; margin-left:40px; margin-bottom:30px; margin-top:30px">
-    <img src="old-school-tv-transparent.png" alt="Image1" style="width:100% ">
-    <div class="container">
-        <h4><b>1</b></h4>
-        <p>Description</p>
+<!-- View CSS -->
+<link rel="stylesheet" href="{% static "css/card.css" %}">
+
+{% endblock %}
+
+{% block body_contents %}
+{% include "festflow/navBar.html" %}
+<div class="container">
+    <div class="titles">
+        <h1>SPONSORS:</h1>
     </div>
-</div>
 
 
 
-<div class="card" style="float:right; margin-right:40px; margin-bottom:30px; margin-top:30px">
-    <img src="old-school-tv-transparent.png" alt="Image1" style="width:100% ">
-    <div class="container">
-        <h4><b>2</b></h4>
-        <p>Description</p>
+    <div class="card" style="float:left; margin-left:40px; margin-bottom:30px; margin-top:30px">
+        <img src="" alt="Image1" style="width:100% ">
+        <div class="container">
+            <h4><b>1</b></h4>
+            <p>Description</p>
+        </div>
     </div>
-</div>
 
 
-<div class="card" style="float:left; margin-left:40px; margin-bottom:30px; margin-top:30px">
-    <img src="old-school-tv-transparent.png" alt="Image1" style="width:100% ">
-    <div class="container">
-        <h4><b>3</b></h4>
-        <p>Description</p>
+
+    <div class="card" style="float:right; margin-right:40px; margin-bottom:30px; margin-top:30px">
+        <img src="" alt="Image1" style="width:100% ">
+        <div class="container">
+            <h4><b>2</b></h4>
+            <p>Description</p>
+        </div>
     </div>
-</div>
 
-<div class="card" style="float:right; margin-right:40px; margin-bottom:30px; margin-top:30px ">
-    <img src="old-school-tv-transparent.png" alt="Image1" style="width:100% ">
-    <div class="container">
-        <h4><b>4</b></h4>
-        <p>Description</p>
+
+    <div class="card" style="float:left; margin-left:40px; margin-bottom:30px; margin-top:30px">
+        <img src="" alt="Image1" style="width:100% ">
+        <div class="container">
+            <h4><b>3</b></h4>
+            <p>Description</p>
+        </div>
     </div>
+
+    <div class="card" style="float:right; margin-right:40px; margin-bottom:30px; margin-top:30px ">
+        <img src="" alt="Image1" style="width:100% ">
+        <div class="container">
+            <h4><b>4</b></h4>
+            <p>Description</p>
+        </div>
+    </div>
+
 </div>
 
-</body>
-</html>
+{% endblock %}
