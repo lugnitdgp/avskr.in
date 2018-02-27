@@ -6,6 +6,12 @@ body {
 	background-position: center;
 }
 
-.wrapper {
-	
+h1 {
+	text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+    	font-size: 2.4em;
+    }
 }

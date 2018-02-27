@@ -9,6 +9,8 @@ body, html {
     overflow-x: hidden;
     /*line-height: 1.8;*/
     background:url("../images2/bg.png");
+    background-size: cover;
+    background-position: center;
 }
 
 /*EVENTS GROUP*/
