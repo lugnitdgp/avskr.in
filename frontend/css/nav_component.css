@@ -638,5 +638,9 @@ html, body {
 		/*font-style: italic;*/
 		opacity: 0.7;
 	}
+	.details{
+		font-family:helvetica;
+		color:#fff;
+	}
 
 }

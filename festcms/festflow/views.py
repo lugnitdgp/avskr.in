@@ -82,7 +82,7 @@ def sponsors(request):
     context = {}
     all_sponsors = Sponsor.objects.all()
     context['all_sponsors'] = all_sponsors
-    return render(request, 'festflow/sponsors.html', context)
+    return render(request, 'festflow/spons.html', context)
 
 
 def contact(request):
