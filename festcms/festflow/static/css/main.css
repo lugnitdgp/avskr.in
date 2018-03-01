@@ -130,8 +130,12 @@
 }
 
 @media only screen and (max-width: 1200px) {
+     #navToggle {
+      margin-left: 5% !important;
+      margin-top: 6% !important;
+    }
+
     .navigation {
       display: none !important;
     }
-
 }
