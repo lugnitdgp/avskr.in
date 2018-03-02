@@ -11,86 +11,21 @@
 <!--SPONSORS LIST-->
 <div class="container">
 	<div style="font-size:5em;font-color:;font-style:cursive;text-align:center">SPONSORS</div><br></br>
+	
+	{% for group, sponsors in sponsors.items %}
 	<div class="row" >
-		<div style="font-size:2em;font-color:;font-style:cursive;text-align:center">MAJOR SPONSORS
+		<div style="font-size:2em;font-color:;font-style:cursive;text-align:center">{{ group.group_name }}
 		</div>
+		{% for sponsor in sponsors %}
 		<div class="col-sm-4"  align="center">
-			<img src="a.jpg" style="height:300px; width:300px; margin:30px;">
+			<img src="{{sponsor.logo.url}}" style="height:300px; width:300px; margin:30px;">
 			<br>
-			<label><a href="#">Sponser1</a></label>
+			<label><a href="#">{{sponsor.name}}</a></label>
 		</div>
-		<div class="col-sm-4"  align="center">
-			<img src="a.jpg" style="height:300px; width:300px; margin:30px;">
-			<br><label><a href="#">Sponser1</a></label>
-		</div>
-		<div class="col-sm-4"  align="center">
-			<img src="a.jpg" style="height:300px; width:300px; margin:30px;">
-			<br><label><a href="#">Sponser1</a></label>
-		</div>
+		{% endfor %}
 	</div>
 	<br></br></br><br>
-	<div class="row" >
-		<div style="font-size:2em;font-color:;font-style:cursive;text-align:center">MEDIA SPONSORS
-		</div>
-		<div class="col-sm-3" align="center">
-			<img src="a.jpg" style="height:200px; width:200px; margin:30px;">
-			<br><label ><a href="#">Sponser1</a></label>
-		</div>
-		<div class="col-sm-3"  align="center">
-			<img src="a.jpg"  style="height:200px; width:200px; margin:30px;">
-			<br><label><a href="#">Sponser1</a></label>
-		</div>
-		<div class="col-sm-3"  align="center">
-			<img src="a.jpg"  style="height:200px; width:200px; margin:30px;">
-			<br><label><a href="#">Sponser1</a></label>
-		</div>
-		<div class="col-sm-3"  align="center">
-			<img src="a.jpg"  style="height:200px; width:200px; margin:30px;">
-			<br><label><a href="#">Sponser1</a></label>
-		</div>
-	</div>
-	<br></br></br></br>
-	<div class="row">
-		<div style="font-size:2em;font-color:;font-style:cursive;text-align:center">EVENT SPONSORS
-		</div>
-		<div class="col-sm-3" align="center">
-			<img src="a.jpg" style="height:200px; width:200px; margin:30px;">
-			<br><label><a href="#">Sponser1</a></label>
-		</div>
-		<div class="col-sm-3"  align="center">
-			<img src="a.jpg"  style="height:200px; width:200px; margin:30px;">
-			<br><label><a href="#">Sponser1</a></label>
-		</div>
-		<div class="col-sm-3"  align="center">
-			<img src="a.jpg"  style="height:200px; width:200px; margin:30px;">
-			<br><label><a href="#">Sponser1</a></label>
-		</div>
-		<div class="col-sm-3"  align="center">
-			<img src="a.jpg"  style="height:200px; width:200px; margin:30px;">
-			<br><label><a href="#">Sponser1</a></label>
-		</div>
-	</div>
-	<br></br></br></br>
-	<div class="row" >
-		<div style="font-size:2em;font-color:;font-style:cursive;text-align:center">FOOD SPONSORS
-		</div>
-		<div class="col-sm-3" align="center">
-			<img src="a.jpg" style="height:200px; width:200px; margin:30px;">
-			<br><label ><a href="#">Sponser1</a></label>
-		</div>
-		<div class="col-sm-3"  align="center">
-			<img src="a.jpg"  style="height:200px; width:200px; margin:30px;">
-			<br><label><a href="#">Sponser1</a></label>
-		</div>
-		<div class="col-sm-3"  align="center">
-			<img src="a.jpg"  style="height:200px; width:200px; margin:30px;">
-			<br><label><a href="#">Sponser1</a></label>
-		</div>
-		<div class="col-sm-3"  align="center">
-			<img src="a.jpg"  style="height:200px; width:200px; margin:30px;">
-			<br><label><a href="#">Sponser1<a></label>
-		</div>
-	</div>
-	<br></br></br><hr>
+	{% endfor %}
+	
 
 {% endblock %}

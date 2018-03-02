@@ -168,6 +168,17 @@ class organizerMember(models.Model):
         return self.name
 
 
+class SponsorGroup(models.Model):
+    """Organize events into groups"""
+    group_identifier = models.CharField(max_length=50, unique=True,
+                                        validators=[lowercaseAlphabet])
+    group_name = models.CharField(max_length=100)
+    # event group logo
+
+    def __str__(self):
+        return self.group_identifier
+
+
 class Sponsor(models.Model):
     """Stores information about fest sponsors
     """
@@ -176,6 +187,9 @@ class Sponsor(models.Model):
     logo = models.ImageField(upload_to='sponsor_logos/')
 
     rank = models.IntegerField(default=0)
+
+    group = models.ForeignKey('SponsorGroup', on_delete=models.SET_NULL,
+                              null=True, blank=True)
 
     def __str__(self):
         return self.name
