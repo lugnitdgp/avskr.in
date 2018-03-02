@@ -1,9 +1,10 @@
 @import "https://designmodo.github.io/Flat-UI/dist/css/flat-ui.min.css";
 
 body {
-	background: url('/static/images2/planet_earth-wide.jpg');
+	background: url('/static/images/layers/reference-100.jpg');
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 }
 
 h1 {
@@ -15,3 +16,4 @@ h1 {
     	font-size: 2.4em;
     }
 }
+

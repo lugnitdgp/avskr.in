@@ -1,45 +1,47 @@
 {% load static %}
 
-<!-- NAVBAR -->
-<nav role="navigation">
-  <div id="navToggle" style="position: absolute;left: 0%; top: 0%; margin-left: 2%; margin-top: 1.3%;">
-    <input type="checkbox" />
-    <span></span>
-    <span></span>
-    <span></span>
-    <ul id="nav" style="height: 110vh;">
-      <a href="/home/">
-        <li>Home</li>
+<div>
+  <!-- NAVBAR -->
+  <nav role="navigation">
+    <div id="navToggle" style="position: absolute;left: 0%; top: 0%; margin-left: 2%; margin-top: 1.3%;">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="nav" style="height: 110vh;">
+        <a href="/home/">
+          <li>Home</li>
+        </a>
+        <a href="/about/">
+          <li>About</li>
+        </a>
+        <a href="/events/groups">
+          <li>Events</li>
+        </a>
+        <a href="/teams/">
+          <li>Team</li>
+        </a>
+        <a href="/sponsors/">
+          <li>Sponsors</li>
+        </a>
+        <a href="/register/">
+          <li>Register</li>
+        </a>
+      </ul>
+    </div>
+  </nav>
+  <!-- HEADER -->
+  <div class="header_fixed" style="text-align: center; height:120px; background: url('{% static './images/header.png'%}'); background-position: center top;background-size: cover; ">
+    <div style="position: absolute; color: #fff; left: 5%; top: 1.1%; font-size: 1.4em;" class="navigation">
+      <a href="/home/" style="color: #fff;">Home</a> > About Us
+    </div>
+    <div style="display: inline-block; height: 100%;">
+      <a href="/">
+        <img src="{% static "./images/Aavishkar Logo Final (WHITE).png"%}" style="max-width: 100%;max-height:80%;height: auto;width: auto;">
       </a>
-      <a href="/about/">
-        <li>About</li>
-      </a>
-      <a href="/events/groups">
-        <li>Events</li>
-      </a>
-      <a href="/teams/">
-        <li>Team</li>
-      </a>
-      <a href="/sponsors/">
-        <li>Sponsors</li>
-      </a>
-      <a href="/register/">
-        <li>Register</li>
-      </a>
-    </ul>
+    </div>
   </div>
-</nav>
-<!-- HEADER -->
-<div class="header_fixed" style="text-align: center; height:120px; background: url('{% static './images/header.png'%}'); background-position: center top;background-size: cover; ">
-  <div style="position: absolute; color: #fff; left: 5%; top: 1.1%; font-size: 1.4em;" class="navigation">
-    <a href="/home/" style="color: #fff;">Home</a> > About Us
-  </div>
-  <div style="display: inline-block; height: 100%;">
-    <a href="/">
-      <img src="{% static "./images/Aavishkar Logo Final (WHITE).png"%}" style="max-width: 100%;max-height:80%;height: auto;width: auto;">
-    </a>
-  </div>
+  <!-- TYPED -->
+  <div class="typed_info" style="text-align: center; height:1.6em; background: url('{% static './images/info2.png'%}'); background-position: center top;background-size: contain; background-repeat: no-repeat;font-family: 'Oswald';color:white; " id="info">
 </div>
-<!-- TYPED -->
-<div class="typed_info" style="text-align: center; height:1.6em; background: url('{% static './images/info2.png'%}'); background-position: center top;background-size: contain; background-repeat: no-repeat;font-family: 'Oswald';color:white; " id="info">
 </div>

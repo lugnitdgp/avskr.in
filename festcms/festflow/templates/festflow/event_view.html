@@ -13,41 +13,43 @@
 {% block body_contents %}
 {% include "festflow/navBar.html" %}
 <div class="container">
-    <div class="jumbotron wrapper">
-        <h1 id='link'>{{ event.name }}</h1>
-        <div class="dash"></div>
-        <br />
-        <br />
-        {% if event.logo %}
-        <img src="{{ event.logo.url }}" alt= "{{ event.name }}" class='img-responsive' />
-        <br />
-        {% endif %}
+    <div class="jumbotron" style="border-style: dashed; background: #171334;">
+        <div style="color: #fff">
+            <h1 id='link' style="text-align: left;">{{ event.name }}</h1>
+            <div class="dash"></div>
+            <br />
+            <br />
+            {% if event.logo %}
+            <img src="{{ event.logo.url }}" alt= "{{ event.name }}" class='img-responsive' />
+            <br />
+            {% endif %}
 
-        <h3 id='link'><strong>About the Event</strong></h3>
-        <div class="subdash"></div>
-        <br />
-        <br />
-        <p>{{ event.description|safe }}</p>
+            <h3 id='link'><strong>About the Event</strong></h3>
+            <div class="subdash"></div>
+            <br />
+            <br />
+            <p>{{ event.description|safe }}</p>
 
-        <div class='sub-heading'>
-            <p><strong>Venue : </strong></p>
-            <p> {{ event.venue }}</p>
+            <div class='sub-heading'>
+                <p><strong>Venue : </strong></p>
+                <p> {{ event.venue }}</p>
+            </div>
+
+            <div class='sub-heading'>
+                <p><strong>Time : </strong></p>
+                <p> {{ event.date_time }}</p>
+            </div>
+
+            {% if event.problem_statement_file %}
+            <a id='problem' href="{{ event.problem_statement_file.url }}" target="_blank" class="btn" role="button">PROBLEM STATEMENT</a>
+            {% endif %}
+
+            {% if event in user_profile.registered_events.all %}
+            <h3>You have already registered for this event !!!</h3>
+            {% else %}
+            <a id='register' href="/register_event/{{ event.identifier }}" class="btn" role="button">REGISTER</a>
+            {% endif %}
         </div>
-
-        <div class='sub-heading'>
-            <p><strong>Time : </strong></p>
-            <p> {{ event.date_time }}</p>
-        </div>
-
-        {% if event.problem_statement_file %}
-        <a id='problem' href="{{ event.problem_statement_file.url }}" target="_blank" class="btn" role="button">PROBLEM STATEMENT</a>
-        {% endif %}
-
-        {% if event in user_profile.registered_events.all %}
-        <h3>You have already registered for this event !!!</h3>
-        {% else %}
-        <a id='register' href="/register_event/{{ event.identifier }}" class="btn" role="button">REGISTER</a>
-        {% endif %}
     </div>
 </div>
 {% endblock %}
