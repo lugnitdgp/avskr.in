@@ -1,9 +1,38 @@
 {% extends "festflow/base.html" %}
 {% load static %}
 
-{% block title %} {{ event.name }} {% endblock %}
+{% block title %}Aavishkar {{ event.name }} {% endblock %}
 
 {% block extra_head %}
+
+{# SEO #}
+<meta name="description" content="Aavishkar presents {{event.name}}. {{event.description|striptags}}">
+<meta name="keywords" content="Aavishkar, Techfest, hackathon, nit, durgapur, fest, open source, maths, tech">
+
+<meta property="og:title" content="Aavishkar presents {{event.name}}">
+<meta property="og:url" content="http://avskr.in{{ request.path }}">
+<meta property="og:description" content="Aavishkar presents {{event.name}}. {{event.description|striptags}}">
+<meta property="og:image" content="http://avskr.in{{event.logo.url}}">
+<meta property="og:type" content="website">
+
+
+<meta name="twitter:domain" content="avskr.in">
+
+<meta name="twitter:title" content="Aavishkar presents {{event.name}}">
+<meta name="twitter:url" content="http://avskr.in{{ request.path }}">
+<meta name="twitter:description" content="Aavishkar presents {{event.name}}. {{event.description|striptags}}">
+<meta name="twitter:image:src" content="http://avskr.in{{event.logo.url}}">
+
+
+
+<meta itemprop="name" content="Aavishkar presents {{event.name}}">
+
+<meta itemprop="url" content="http://avskr.in{{ request.path }}">
+<meta itemprop="description" content="Aavishkar presents {{event.name}}. {{event.description|striptags}}">
+<meta itemprop="image" content="http://avskr.in{{event.logo.url}}">
+
+
+
 
 <!-- View CSS -->
 <link rel="stylesheet" type="text/css" href='{% static "css/event_view.css" %}'/>
