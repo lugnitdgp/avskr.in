@@ -121,6 +121,23 @@
   color: #fff;
 }
 
+.nav_menu:hover {
+  background: #51c5d1;
+  color: #fff !important;
+}
+
+.navigation a {
+  color: #fff;
+}
+
+.navigation a:hover {
+  color: #fff;
+}
+
+.active {
+  background: #51c5d1;
+}
+
 /*
  * And let's slide it in from the left
  */
@@ -137,5 +154,8 @@
 
     .navigation {
       display: none !important;
+    }
+    .navBar {
+      display: block !important;
     }
 }
