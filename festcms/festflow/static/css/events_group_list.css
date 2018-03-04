@@ -11,6 +11,7 @@ body, html {
     background:url("../images2/bg.png");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 /*EVENTS GROUP*/
