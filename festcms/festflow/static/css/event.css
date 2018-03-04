@@ -1,4 +1,7 @@
 @import "https://designmodo.github.io/Flat-UI/dist/css/flat-ui.min.css";
+html {
+	overflow-x: hidden;
+}
 body {
 	background: url('/static/images/layers/bg-100.jpg');
 	background-attachment: fixed;
