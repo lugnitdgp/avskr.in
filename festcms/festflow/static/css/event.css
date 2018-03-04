@@ -1,13 +1,30 @@
-/*@import "https://designmodo.github.io/Flat-UI/dist/css/flat-ui.min.css";*/
 
 body {
-	background: url('/static/images2/Untitled-1.jpg');
-	background-size: cover;
-	background-position: center;
-	font-size: 2em;
+	background: url('/static/images/bg_home-100.jpg');
+	background-attachment: fixed;
 }
-.jumbotron {
-	-moz-box-shadow:    inset 0 0 10px #000000;
-   -webkit-box-shadow: inset 0 0 10px #000000;
-   box-shadow:         inset 0 0 10px #000000;
+a {
+	text-decoration: none !important;
+}
+/* This is not necessary*/
+.panes-environment .panes-container .pane {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 30px;
+  text-align: center;
+  min-height: 700px;
+  padding-top: 30px;
+  width: 60%;
+  height: 20%;
+  margin-left: 20%;
+  color: #000;
+  border-radius: 5%;
+}
+
+
+/*TODO DISPLAY:NONE A LAYER OR DIV BEFORE A BREAKPOINT IN SCROLL USING MAGIC SCROLL*/
+@-webkit-keyframes sdb03 {
+  0% {
+    opacity: 0;
 }

@@ -10,9 +10,20 @@
 
 {% endblock %}
 
+{% block extrajs %}
+     <script type="text/javascript" src="{% static "vendor/js/modernizr-2.5.2.min.js" %}"></script>
+    <script src="{% static "vendor/js/jquery-1.10.2.min.js" %}"></script>
+    <script src="{% static "vendor/js/plugins/jquery.pane3D.js" %}"></script>
+    <script>
+    $(document).ready(function(){    
+    $("#container").pane3D();
+    });
+    </script>
+{% endblock %}
+
 {% block body_contents %}
 {% include "festflow/navBar.html" %}
-<div class="container">
+<!-- <div class="container">
     <div class="jumbotron">
         <h1 id='link'>Events</h1>
         <div class="dash"></div>
@@ -35,6 +46,15 @@
             {% endfor %}
         </div>
     </div>
-</div>
+</div> -->
+<div id="container" class="panes-environment">
+    <div class="panes-container">
+        {% for event in group_events %}
+            <a href="{{ event.get_absolute_url }}">
+                <section class="pane" style="background: url('{{ event.logo.url }}');"><!-- <p style="vertical-align: center">{{ event.name }}</p> --></section>
+            </a>
+        {% endfor %}
+    </div>
+  </div>
 
 {% endblock %}
