@@ -36,12 +36,8 @@ def home(request):
 
 def teams(request):
     context = {}
-    profiles_count = Profile.objects.count()
-    all_events = Event.objects.all()
-
-    context['profiles_count'] = profiles_count
-    context['all_events'] = all_events
-
+    all_members = organizerMember.objects.all().order_by('rank')
+    context['members'] = all_members
     return render(request, 'festflow/teams.html', context)
 
 

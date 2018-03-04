@@ -90,6 +90,10 @@ body, html {
   color: white;
 }
 
+.team-avatar {
+  max-width: 200px;
+}
+
 
 #myVideo {
     position:absolute;
