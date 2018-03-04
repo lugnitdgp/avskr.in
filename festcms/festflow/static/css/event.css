@@ -1,4 +1,4 @@
-
+@import "https://designmodo.github.io/Flat-UI/dist/css/flat-ui.min.css";
 body {
 	background: url('/static/images/layers/bg-100.jpg');
 	background-attachment: fixed;
