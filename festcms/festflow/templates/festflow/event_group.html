@@ -19,8 +19,8 @@
         <br />
         <br />
         <br />
-        <div class='row'>
-            {% for event in group_events %}
+        {% for event in group_events %}
+        {% if forloop.counter0|divisibleby:3 %}<div class='row'>{% endif %}
             <div class='col-lg-4'>
                 <a href="{{ event.get_absolute_url }}">
                     {% if event.logo %}
@@ -32,8 +32,8 @@
                     </div>
                 </a>
             </div>
-            {% endfor %}
-        </div>
+        {% if forloop.counter|divisibleby:3 or forloop.last %}</div>{% endif %}
+        {% endfor %}
     </div>
 </div>
 
