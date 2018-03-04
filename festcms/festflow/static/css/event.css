@@ -2,6 +2,8 @@
 body {
 	background: url('/static/images/bg_home-100.jpg');
 	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
 }
 a {
 	text-decoration: none !important;
@@ -13,13 +15,14 @@ a {
   box-sizing: border-box;
   font-size: 30px;
   text-align: center;
-  min-height: 700px;
-  padding-top: 30px;
+  margin-top: 1%;
   width: 60%;
-  height: 20%;
+  height: 60%;
   margin-left: 20%;
   color: #000;
   border-radius: 5%;
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -27,4 +30,11 @@ a {
 @-webkit-keyframes sdb03 {
   0% {
     opacity: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .panes-environment .panes-container .pane {
+	  
+	}
+
 }
