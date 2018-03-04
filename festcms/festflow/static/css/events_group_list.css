@@ -8,7 +8,7 @@ body, html {
     overflow-y: auto;
     overflow-x: hidden;
     /*line-height: 1.8;*/
-    background:url("../images2/bg.png");
+    background:url("../images2/eventbg.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
