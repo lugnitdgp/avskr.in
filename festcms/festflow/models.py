@@ -164,6 +164,17 @@ class organizerMember(models.Model):
 
     contactURL = models.URLField(blank=True, null=True)
 
+    CLUB_CHOICES = (
+        ('GLUG', 'GNU Linux Users\' Group'),
+        ('MNTC', 'Maths And Tech Club'),
+        ('SAE', 'SAE'),
+    )
+    club = models.CharField(
+        max_length=5,
+        choices=CLUB_CHOICES,
+        default='GLUG',
+    )
+
     def __str__(self):
         return self.name
 
