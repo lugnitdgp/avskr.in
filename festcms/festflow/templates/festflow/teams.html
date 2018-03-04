@@ -18,7 +18,7 @@
 		    <div class="row">
 		    	{% for member in members %}
 		    	<div class="col-md-4 col-sm-6 text-center">
-		          <img class="rounded-circle img-fluid d-block mx-auto team-avatar" src="{{member.avatar_img.url}}" alt="">
+		          <img class="rounded-circle img-fluid d-block mx-auto team-avatar" src="{% if member.avatar_img %}{{member.avatar_img.url}}{% else %}{% static "images/1-dancing.gif"%}{% endif %}" alt="">
 		          <h3>{{member.name}}
 		            <small>{{member.club}} |</small>
 		            <small>{{member.position}}</small>
@@ -32,6 +32,9 @@
 		        </div>
 		    	{% endfor %}
 		    </div>
+		    <br>
+		    <br>
+		    <br>
 	</div>
 </div>
 {% endblock %}
