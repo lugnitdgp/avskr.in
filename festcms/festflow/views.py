@@ -22,6 +22,7 @@ def index(request):
 
     return render(request, 'festflow/index.html', context)
 
+
 def home(request):
     context = {}
     profiles_count = Profile.objects.count()
@@ -31,6 +32,7 @@ def home(request):
     context['all_events'] = all_events
 
     return render(request, 'festflow/homePage.html', context)
+
 
 def teams(request):
     context = {}
@@ -54,6 +56,7 @@ def events(request):
     all_events = Event.objects.all()
     context['all_events'] = all_events
     return render(request, 'festflow/event.html', context)
+
 
 def event_group_list(request):
     context = {}
@@ -80,8 +83,13 @@ def keynotes(request):
 
 def sponsors(request):
     context = {}
-    all_sponsors = Sponsor.objects.all()
-    context['all_sponsors'] = all_sponsors
+    all_groups = SponsorGroup.objects.all()
+    sponsors = {}
+    for group in all_groups:
+        sponsor_list = Sponsor.objects.filter(group=group)
+        sponsors[group] = sponsor_list
+    print(sponsors)
+    context['sponsors'] = sponsors
     return render(request, 'festflow/spons.html', context)
 
 
