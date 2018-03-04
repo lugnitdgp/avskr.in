@@ -24,9 +24,15 @@
         <a href="/sponsors/">
           <li>Sponsors</li>
         </a>
-        <a href="/register/">
+        {% if user.is_authenticated %}
+        <a href="/logout/">
+          <li>Logout</li>
+        </a>
+        {% else %}
+        <a href="/login">
           <li>Register</li>
         </a>
+        {% endif %}
       </ul>
     </div>
   </nav>
@@ -36,7 +42,7 @@
       <!-- <a href="/home/" style="color: #fff;">Home</a> > About Us -->
     </div>
     <div style="display: inline-block; height: 100%;">
-      <a href="/">
+      <a href="/home">
         <img src="{% static "./images/Aavishkar Logo Final (WHITE).png"%}" style="max-width: 100%;max-height:80%;height: auto;width: auto;">
       </a>
     </div>

@@ -1,22 +1,23 @@
 {% extends "festflow/base.html" %}
 {% load static %}
 
-{% block title %} LOGIN {% endblock %}
+{% block title %} {{ event.name }} {% endblock %}
 
 {% block extra_head %}
 
 <!-- View CSS -->
-<link rel="stylesheet" type="text/css" href='{% static "css/login.css" %}'/>
+<link rel="stylesheet" type="text/css" href='{% static "css/event_view.css" %}'/>
 
 {% endblock %}
 
 {% block body_contents %}
-
+{% include "festflow/navBar.html" %}
 <div class="container">
-    <div class="jumbotron">
-        {% if user.is_authenticated %}
+    <div class="jumbotron" style="border-style: dashed; background: #171334;">
+        <div style="color: #fff">
+           {% if user.is_authenticated %}
         <!--User is logged in-->
-        <h1 id='link'>Login Details</h1>
+        <center><h3 id='link'>Congrats! You are registered for Aavishkar</h3></center>
         <div class="dash"></div>
         <br />
         <br />
@@ -27,7 +28,7 @@
             <tbody>
                 <tr>
                     <td>You are logged in as :</td>
-                    <td><i> {{ user.username }}</i> !</td>
+                    <td><i>{{ user.username }}</i></td>
                 </tr>
                 <tr>
                     <td>First Name :</td>
@@ -56,16 +57,16 @@
         <br />
         <br />
         <div class="login-btn">
-            <a href="/login/facebook/?next=/">
+            <a href="/login/facebook/?next=/login">
                 <img id='fb-login' src='{% static "images/fb-login-btn.png" %}' class='img-responsive' alt='fb login' />
             </a>
-            <a href="/login/google-oauth2/?next=/">
+            <a href="/login/google-oauth2/?next=/login">
                 <img id='google-login' src='{% static "images/google-login-btn.png" %}' class='img-responsive' alt='google login' />
             </a>
         </div>
         {% endif %}
-
+ 
+        </div>
     </div>
 </div>
-
 {% endblock %}

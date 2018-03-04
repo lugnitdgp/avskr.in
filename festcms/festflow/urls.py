@@ -67,5 +67,5 @@ urlpatterns = [
 
     # logout url
     url(r'^logout/$',
-        logout, {'next_page': '/'})
+        logout, {'next_page': '/home'})
 ]
