@@ -17,11 +17,11 @@
 		<div style="font-size:2em;font-color:;font-style:cursive;text-align:center">{{ group.group_name }}
 		</div>
 		{% for sponsor in sponsors %}
+        {% if forloop.counter0|divisibleby:3 %}<div class='row'>{% endif %}
 		<div class="col-sm-4"  align="center">
-			<img src="{{sponsor.logo.url}}" style="height:300px; width:300px; margin:30px;">
-			<br>
-			<label><a href="#">{{sponsor.name}}</a></label>
+			<img src="{{sponsor.logo.url}}" style="width:300px; margin:30px;">
 		</div>
+		{% if forloop.counter|divisibleby:3 or forloop.last %}</div>{% endif %}
 		{% endfor %}
 	</div>
 	<br></br></br><br>
