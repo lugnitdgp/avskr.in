@@ -11,8 +11,8 @@
 
 {% block body_contents %}  
     {% include "festflow/navBar.html" %}
-    <div class="events_group" style="top: 10%;">
-        <div style="top:7em;width:100%;height:100%;position: absolute;text-align: center;">
+    <div class="events_group">
+        <div style="top:7em;width:100%;height:100%;text-align: center;">
             <h1>EVENTS</h1><br>
             {% for group in all_groups %}
               <a href="{{group.get_absolute_url}}">
