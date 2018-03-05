@@ -38,7 +38,7 @@ body {
   width: 100%;
   transform: translateY(-50%);
 }
-.menu-center{list-style-type: none;text-align: center;position: relative;z-index: 9;}
+.menu-center{list-style-type: none;text-align: center;}
 .menu-center li a{text-decoration: none;color: #fff;padding: 5px 9px!important;font-size:1.6em;width: 100%;font-family: 'Oswald', sans-serif;}
 .menu-center li a:hover {
   text-decoration: underline;
@@ -138,6 +138,7 @@ body {
       /*overflow-y: scroll;*/
     }
     .menu-center{
+      margin-top: 2em;
       padding:0;
     }
     .menu-center li{
