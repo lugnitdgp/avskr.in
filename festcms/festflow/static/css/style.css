@@ -110,12 +110,18 @@ body, html {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
+    #myVideo {
+      display: none;
+    }
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
     }
 }
 
 @media only screen and (max-device-width: 500px) {
+    #myVideo {
+      display: none;
+    }
     .middle_box{
         width:100%;
         color:white;
