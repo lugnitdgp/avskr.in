@@ -13,13 +13,14 @@
     {% include "festflow/navBar.html" %}
     <div class="events_group" style="top: 10%;">
         <div style="top:7em;width:100%;height:100%;position: absolute;text-align: center;">
-            <h1 style="color:#201b43 ;margin:0;font-size: 4em;">EVENTS</h1><br>
+            <h1>EVENTS</h1><br>
             {% for group in all_groups %}
               <a href="{{group.get_absolute_url}}">
                 {% if group.logo %} 
-                  <div class="blog-card" style="background:url('{{ group.logo.url }}');background-position: center;background-size: cover;">
+                  <div class="blog-card">
+                    <img class="img-responsive" src="{{group.logo.url}}">
                     <div class="title-content">
-                      <!-- <h3 style="color: #000;">{{ group.group_name }}</h3> -->
+                      <h3 style="color: #000;">{{ group.group_name }}</h3>
                       <hr/>
                     </div>
                   </div>
