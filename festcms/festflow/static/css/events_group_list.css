@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 body,h1,h2,h3,h4,h5,h6 {font-family: "Oswald", sans-serif;}
-body, html {
+body {
     height: 100%;
     color: #777;
     overflow-y: auto;
