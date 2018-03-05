@@ -3,11 +3,6 @@
 
 body,h1,h2,h3,h4,h5,h6 {font-family: "Oswald", sans-serif;}
 body {
-    height: 100%;
-    color: #777;
-    overflow-y: auto;
-    overflow-x: hidden;
-    /*line-height: 1.8;*/
     background:url("../images2/eventbg.jpg");
     background-size: cover;
     background-position: center;
@@ -17,8 +12,6 @@ body {
 /*EVENTS GROUP*/
 .events_group{
   position: absolute;
-  height: 100vh;
-  width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
