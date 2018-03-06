@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 body,h1,h2,h3,h4,h5,h6 {font-family: "Oswald", sans-serif;}
+html {
+  overflow-x: hidden;
+}
 body {
     background:url("../images2/eventbg.jpg");
     background-size: cover;
