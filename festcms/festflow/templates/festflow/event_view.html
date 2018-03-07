@@ -64,7 +64,14 @@
 
             <div class='sub-heading'>
                 <p><strong>Venue : </strong></p>
-                <p> {{ event.venue }}</p>
+                <p>
+                  {% if event.group|slugify == "online" %}
+                    <a href="http://{{ event.venue }}">{{ event.venue }}</a>
+                  {% endif %}
+                  {% if event.group|slugify != "online" %}
+                    {{ event.venue }}
+                  {% endif %}
+                </p>
             </div>
 
             <div class='sub-heading'>
