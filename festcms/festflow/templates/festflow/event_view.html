@@ -72,7 +72,7 @@
                 <p><strong>Venue : </strong></p>
                 <p>
                   {% if event.group|slugify == "online" %}
-                    <a href="http://{{ event.venue }}">{{ event.venue }}</a>
+                    <a href="{{ event.venue }}">{{ event.venue }}</a>
                   {% endif %}
                   {% if event.group|slugify != "online" %}
                     {{ event.venue }}
