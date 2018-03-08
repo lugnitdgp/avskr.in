@@ -12,7 +12,9 @@
 <meta property="og:title" content="Aavishkar presents {{event.name}}">
 <meta property="og:url" content="http://avskr.in{{ request.path }}">
 <meta property="og:description" content="Aavishkar presents {{event.name}}. {{event.description|striptags}}">
+{% if event.logo %}
 <meta property="og:image" content="http://avskr.in{{event.logo.url}}">
+{% endif %}
 <meta property="og:type" content="website">
 
 
@@ -21,7 +23,9 @@
 <meta name="twitter:title" content="Aavishkar presents {{event.name}}">
 <meta name="twitter:url" content="http://avskr.in{{ request.path }}">
 <meta name="twitter:description" content="Aavishkar presents {{event.name}}. {{event.description|striptags}}">
+{% if event.logo %}
 <meta name="twitter:image:src" content="http://avskr.in{{event.logo.url}}">
+{% endif %}
 
 
 
@@ -29,7 +33,9 @@
 
 <meta itemprop="url" content="http://avskr.in{{ request.path }}">
 <meta itemprop="description" content="Aavishkar presents {{event.name}}. {{event.description|striptags}}">
+{% if event.logo %}
 <meta itemprop="image" content="http://avskr.in{{event.logo.url}}">
+{% endif %}
 
 
 
